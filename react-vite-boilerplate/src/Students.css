@@ -1,0 +1,38 @@
+.container-students {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.students-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.student {
+  /* width: calc(33.33% - 10px); */
+  margin-bottom: 20px;
+}
+
+.student img {
+  max-width: 100%; /* Ensures the image doesn't exceed its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+@media screen and (max-width: 768px) {
+  .student {
+    width: calc(33, 33% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .student {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .student {
+    width: 100%;
+  }
+}
