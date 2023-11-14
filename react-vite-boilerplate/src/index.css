@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+<<<<<<< HEAD
 }
 
 header {
@@ -37,4 +38,8 @@ nav a {
 }
 .main {
   background-color: red;
+=======
+  display: flex;
+  place-items: center;
+>>>>>>> f9f625c959e14e4ef0e32d0ddc6933a7e9f7906d
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { TaskList } from "./TaskList";
 import { TaskForm } from "./TaskForm";
 
@@ -28,6 +29,12 @@ import TaskForm from "./TaskForm";
 import TaskList from "./TaskList";
 
 export const Tasks = () => {
+=======
+import TaskForm from "./TaskForm";
+import TaskList from "./TaskList";
+
+export const Tasks = () => {
+>>>>>>> f9f625c959e14e4ef0e32d0ddc6933a7e9f7906d
   const [taskList, setTaskList] = useState([]);
   const [loading, setLoading] = useState(false);
   const [newTodo, setNewTodo] = useState("");
@@ -90,16 +97,22 @@ export const Tasks = () => {
   };
 
   useEffect(() => {
+<<<<<<< HEAD
 >>>>>>> 18bd09d69b91a0ba75233bde499561ff168da476
+=======
+>>>>>>> f9f625c959e14e4ef0e32d0ddc6933a7e9f7906d
     fetchTasks();
   }, []);
 
   return (
     <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TaskForm />
       <TaskList tasks={tasks} />
 =======
+=======
+>>>>>>> f9f625c959e14e4ef0e32d0ddc6933a7e9f7906d
       <TaskForm
         newTodo={newTodo}
         onNewTodoChange={handleNewTodoChange}
@@ -110,7 +123,10 @@ export const Tasks = () => {
         taskList={taskList}
         setTaskList={setTaskList}
       />
+<<<<<<< HEAD
 >>>>>>> 18bd09d69b91a0ba75233bde499561ff168da476
+=======
+>>>>>>> f9f625c959e14e4ef0e32d0ddc6933a7e9f7906d
     </div>
   );
 };
